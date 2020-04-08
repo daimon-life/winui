@@ -1,3 +1,9 @@
 [submodule "uisystem/duilib"]
 	path = uisystem/duilib
 	url = https://github.com/duilib/duilib.git
+[submodule "uisystem/TIMSDK"]
+	path = uisystem/TIMSDK
+	url = https://github.com/tencentyun/TIMSDK.git
+[submodule "uisystem/NIM_Duilib_Framework"]
+	path = uisystem/NIM_Duilib_Framework
+	url = https://github.com/netease-im/NIM_Duilib_Framework.git
