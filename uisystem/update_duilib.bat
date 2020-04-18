@@ -7,7 +7,7 @@ if not exist _duilib\.git git submodule update --init -- _duilib
 if exist _duilib\.git git pull origin
 if %errorlevel% NEQ 0 goto endduilib_src
 if exist duilib_src rd /s /q duilib_src
-xcopy /e .\_duilib                                           .\duilib_src\
+xcopy /e .\_duilib\DuiLib                                    .\duilib_src\
 if exist duilib_src\.git erase duilib_src\.git
 :endduilib_src
 
@@ -18,7 +18,7 @@ if not exist _DuiLib_Ultimate\.git git submodule update --init -- _DuiLib_Ultima
 if exist _DuiLib_Ultimate\.git git pull origin
 if %errorlevel% NEQ 0 goto endduilib_qdtroy
 if exist duilib_qdtroy rd /s /q duilib_qdtroy
-xcopy /e .\_DuiLib_Ultimate                                  .\duilib_qdtroy\
+xcopy /e .\_DuiLib_Ultimate\DuiLib                           .\duilib_qdtroy\
 if exist duilib_qdtroy\.git erase duilib_qdtroy\.git
 :endduilib_qdtroy
 
