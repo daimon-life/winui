@@ -7,3 +7,6 @@
 [submodule "uisystem/NIM_Duilib_Framework"]
 	path = uisystem/NIM_Duilib_Framework
 	url = https://github.com/netease-im/NIM_Duilib_Framework.git
+[submodule "uisystem/DuiLib_Ultimate"]
+	path = uisystem/DuiLib_Ultimate
+	url = https://github.com/qdtroy/DuiLib_Ultimate.git
