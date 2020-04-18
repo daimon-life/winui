@@ -2,4 +2,8 @@
 uisystem/TIMSDK
 uisystem/NIM_Duilib_Framework
 
-#
+# visual studio
+build
+*.sdf
+*.suo
+*.user
