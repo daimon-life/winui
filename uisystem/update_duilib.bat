@@ -1,5 +1,17 @@
 @echo off
 
+rem duilib_c
+:duilib_c
+if exist duilib_c rd /s /q duilib_c
+xcopy /e .\_DuiLib_c\DuiLib                                  .\duilib_c\
+:endduilib_c
+
+rem duilib_faw
+:duilib_faw
+if exist duilib_faw rd /s /q duilib_faw
+xcopy /e .\_DuiLib_Faw\DuiLib                                .\duilib_faw\
+:endduilib_faw
+goto end
 
 rem duilib
 :duilib_src

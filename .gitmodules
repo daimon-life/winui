@@ -10,3 +10,9 @@
 [submodule "uisystem/_DuiLib_Ultimate"]
 	path = uisystem/_DuiLib_Ultimate
 	url = https://github.com/qdtroy/DuiLib_Ultimate.git
+[submodule "uisystem/_DuiLib_Faw"]
+	path = uisystem/_DuiLib_Faw
+	url = https://github.com/fawdlstty/DuiLib_Faw.git
+[submodule "uisystem/_DuiLib_c"]
+	path = uisystem/_DuiLib_c
+	url = https://github.com/caozhiyi/DuiLib_c.git
