@@ -4,6 +4,7 @@ uisystem/NIM_Duilib_Framework
 
 # visual studio
 build
+*.opensdf
 *.sdf
 *.suo
 *.user
