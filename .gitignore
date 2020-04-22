@@ -9,3 +9,5 @@ build
 *.suo
 *.user
 .vs
+*.obj
+*.tlog
