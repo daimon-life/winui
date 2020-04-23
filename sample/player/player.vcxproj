@@ -89,6 +89,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainWnd.cpp" />
+    <ClCompile Include="WindowImplBaseCtrl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainWnd.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="WindowImplBaseCtrl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="player.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ui_xml1.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Res\MainWnd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\Logo.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

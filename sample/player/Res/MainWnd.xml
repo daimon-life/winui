@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1000,655" sizebox="3,3,3,3" caption="0,0,0,29" roundcorner="0,0" mininfo="1000,655" >
+    <!--字体设置-->
+    <Font id="0" name="微软雅黑" size="14" bold="false" default="true" underline="false" italic="false" shared="false"/>
+    <Font id="1" name="微软雅黑" size="12" bold="false" underline="false" italic="false"/>
+    <Font id="2" name="微软雅黑" size="11" bold="false" underline="false" italic="false"/>
+    <!--默认、多语言-->
+    <!--<Default />
+    <MultiLanguage />
+    <Image />-->
+    <!--滚动条设置-->
+    <Include source="111" />
+    <!--主界面-->
+    <VerticalLayout inset="1,1,1,1" bordercolor="#FF95989B">
+      <VerticalLayout name="WndBg">
+        <!--标题栏-->
+        <HorizontalLayout name="TitleBarLayout" bkimage="Default/MainWnd/TitleBar_Bg.png" height="28">
+          <Control width="5" />
+          <VerticalLayout width="18">
+            <Control />
+            <Control name="TitleBarIcon" bkimage="Default/Common/Wnd/Logo.png" width="18" height="18" />
+            <Control />
+          </VerticalLayout>
+          <Label name="TitleBarName" text="录播播放器" textpadding="5,0,0,0" align="left" valign="center" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" />
+          <Control />
+          <!--标题栏控制区-->
+          <HorizontalLayout name="TitleBarCtrlLayout" width="112" >
+            <Button name="OpenFileBtn" width="28" height="28" tooltip="打开"
+                    normalimage="Default/MainWnd/WndFile_N.png" hotimage="Default/MainWnd/WndFile_H.png" pushedimage="Default/MainWnd/WndFile_P.png" />
+            <Button name="Sys_MinBtn" width="28" height="28" tooltip="最小化"
+                    normalimage="Default/Common/Wnd/WndMin_N.png" hotimage="Default/Common/Wnd/WndMin_H.png" pushedimage="Default/Common/Wnd/WndMin_P.png" />
+            <Button name="Sys_MaxBtn" width="28" height="28" tooltip="最大化"
+                    normalimage="Default/Common/Wnd/WndMax_N.png" hotimage="Default/Common/Wnd/WndMax_H.png" pushedimage="Default/Common/Wnd/WndMax_P.png" />
+            <Button name="Sys_RestoreBtn" width="28" height="28" visible="false" tooltip="恢复"
+                    normalimage="Default/Common/Wnd/WndRestore_N.png" hotimage="Default/Common/Wnd/WndRestore_H.png" pushedimage="Default/Common/Wnd/WndRestore_P.png" />
+            <Button name="Sys_CloseBtn" width="28" height="28" tooltip="关闭"
+                    normalimage="Default/Common/Wnd/WndClose_N.png" hotimage="Default/Common/Wnd/WndClose_H.png" pushedimage="Default/Common/Wnd/WndClose_P.png" />
+          </HorizontalLayout>
+        </HorizontalLayout>
+        <!--显示区-->
+        <VerticalLayout>
+          <TabLayout name="VideoLayoutTab" bkimage="Default/MainWnd/PlayArea_Bg.png" selectedid="0">
+            <!--
+            <MultiWndLayout name="ResourceLayout">
+              <Label text="资源模式" width="100" height="28" textcolor="#FFA0A0A0" float="true" visible="false"/>
+            </MultiWndLayout>
+            <HorizontalLayout name="MovieLayout" bordersize="0" bordercolor="#FFFF6060">
+              <Label text="电影模式" width="100" height="28" textcolor="#FFA0A0A0" float="true" visible="false"/>
+              <VideoWindow name="MovieVideoWnd"/>
+            </HorizontalLayout>
+            -->
+          </TabLayout>
+          <VerticalLayout name="PlayCtrlArea" height="64" bkcolor="#FF606060">
+            <HorizontalLayout name="PlayProgressArea" height="16" bkimage="Default/MainWnd/PlayProgressArea_Bg.png">
+              <Control width="10" />
+              <Slider name="PlayProgreSlider" height="16" hor="true" tilefore="true" min="0" max="1000" value="0" step="1" thumbsize="16,16"
+                        bkimage="file='Default/MainWnd/PlayProgress_Bg.png' corner='2,2,2,2' dest='0,6,5000,10'"
+                        foreimage="file='Default/MainWnd/PlayedProgress_Bg.png' corner='2,2,2,2' dest='0,6,0,10'"
+                        thumbimage="Default/MainWnd/PlayProgress_N.png"
+                        thumbhotimage="Default/MainWnd/PlayProgress_H.png"
+                        thumbpushedimage="Default/MainWnd/PlayProgress_P.png"/>
+              <Label name="PlayTimeLbl" text="00:00:00/00:00:00" textpadding="10,0,0,0" font="2" align="left" valign="center" textcolor="#FF9A9EA2"/>
+              <Control width="10" />
+            </HorizontalLayout>
+            <HorizontalLayout name="PlayCtrlArea" bkimage="Default/MainWnd/PlayCtrlArea_Bg.png">
+              <Control width="10" />
+              <Button name="VideoSrcInfoBtn" width="40" height="40" tooltip="视频信息" padding="0,4,0,0"
+                    normalimage="Default/MainWnd/VideoSrcInfo_N.png" hotimage="Default/MainWnd/VideoSrcInfo_H.png" pushedimage="Default/MainWnd/VideoSrcInfo_P.png" />
+              <Control width="10" />
+              <CheckBox name="ResourceModelChk" font="1" width="70" height="24" StatusIconSpace="-70" StatusIconWidth="70" StatusIconHeight="24" text="资源模式" align="center" padding="0,12,0,0" selected="false" paintbkfirst="true"
+                      textcolor="#FF9FCDEB" selectedtextcolor="#FFD8ECFA" disabledtextcolor="#FF404040"
+                      bkimage="file='Default/MainWnd/SwitchLeft_N.png'"
+                      hotimage="file='Default/MainWnd/SwitchLeft_H.png'"
+                      selectedimage="file='Default/MainWnd/SwitchLeft_P.png'"
+                      group="VideoModelGroup" />
+              <CheckBox name="MovieModelChk" font="1" width="70" height="24" StatusIconOffset="-1" StatusIconSpace="-70" StatusIconWidth="70" StatusIconHeight="24" text="电影模式" align="center" padding="0,12,0,0" selected="false" paintbkfirst="true"
+                      textcolor="#FF9FCDEB" selectedtextcolor="#FFD8ECFA" disabledtextcolor="#FF404040"
+                      bkimage="file='Default/MainWnd/SwitchRight_N.png'"
+                      hotimage="file='Default/MainWnd/SwitchRight_H.png'"
+                      selectedimage="file='Default/MainWnd/SwitchRight_P.png'"
+                      group="VideoModelGroup" />
+              <Control />
+              <Button name="StopBtn" width="32" height="32" tooltip="停止" padding="0,8,0,0"
+                   normalimage="Default/MainWnd/Stop_N.png" hotimage="Default/MainWnd/Stop_H.png" pushedimage="Default/MainWnd/Stop_P.png" disabledimage="Default/MainWnd/Stop_D.png" enabled="false"/>
+              <Button name="PlayBtn" width="40" height="40" tooltip="播放" padding="0,4,0,0"
+                   normalimage="Default/MainWnd/Play_N.png" hotimage="Default/MainWnd/Play_H.png" pushedimage="Default/MainWnd/Play_P.png" disabledimage="Default/MainWnd/Play_D.png" enabled="false"/>
+              <Button name="PauseBtn" width="40" height="40" tooltip="暂停" padding="0,4,0,0"
+                   normalimage="Default/MainWnd/Pause_N.png" hotimage="Default/MainWnd/Pause_H.png" pushedimage="Default/MainWnd/Pause_P.png" disabledimage="Default/MainWnd/Pause_D.png" enabled="false" visible="false"/>
+              <Button name="FullscreenBtn" width="32" height="32" tooltip="全屏" padding="0,8,0,0"
+                   normalimage="Default/MainWnd/Fullscreen_N.png" hotimage="Default/MainWnd/Fullscreen_H.png" pushedimage="Default/MainWnd/Fullscreen_P.png" disabledimage="Default/MainWnd/Fullscreen_D.png" enabled="true"/>
+              <Control />
+              <Button name="VolumeBtn" width="32" height="32" tooltip="静音" padding="0,8,0,0"
+                   normalimage="Default/MainWnd/Volume_N.png" hotimage="Default/MainWnd/Volume_H.png" pushedimage="Default/MainWnd/Volume_P.png" disabledimage="Default/MainWnd/Volume_D.png" visible="true"/>
+              <Button name="MuteBtn" width="32" height="32" tooltip="恢复音量" padding="0,8,0,0"
+                   normalimage="Default/MainWnd/VolumeMute_N.png" hotimage="Default/MainWnd/VolumeMute_H.png" pushedimage="Default/MainWnd/VolumeMute_P.png" disabledimage="Default/MainWnd/VolumeMute_D.png" visible="false"/>
+              <Slider name="VolumeSizeSlider" width="100" height="12" hor="true" tilefore="true" min="0" max="100" value="50" step="1" thumbsize="12,12" padding="0,18,0,0"
+                        bkimage="file='Default/MainWnd/PlayProgress_Bg.png' corner='2,2,2,2' dest='0,4,880,8'"
+                        foreimage="file='Default/MainWnd/PlayedProgress_Bg.png' corner='2,2,2,2' dest='0,4,0,8'"
+                        thumbimage="Default/MainWnd/VolumeSize_N.png"
+                        thumbhotimage="Default/MainWnd/VolumeSize_H.png"
+                        thumbpushedimage="Default/MainWnd/VolumeSize_P.png"/>
+              <Control width="15"/>
+            </HorizontalLayout>
+          </VerticalLayout>
+        </VerticalLayout>
+      </VerticalLayout>
+    </VerticalLayout>
+</Window>

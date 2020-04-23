@@ -11,3 +11,4 @@ build
 .vs
 *.obj
 *.tlog
+*.aps

@@ -8,6 +8,8 @@
 #include <atlstr.h>
 // Duilib库
 #include "..\..\uisystem\siui\UIlib.h"
+// ui
+#include "MainWnd.h"
 
 // 执行起点
 int APIENTRY _tWinMain(_In_	 HINSTANCE hInstance,
@@ -27,6 +29,11 @@ int APIENTRY _tWinMain(_In_	 HINSTANCE hInstance,
 		// 初始化xDui环境
 		CPaintManagerUI::SetInstance(hInstance);
 		CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetInstancePath() + L"Skin");
+		// 创建主界面
+		CMainWnd* pMainWnd = new CMainWnd();
+		pMainWnd->Create(NULL, L"录播播放器", UI_WNDSTYLE_FRAME, WS_EX_ACCEPTFILES);
+		pMainWnd->CenterWindow();
+		pMainWnd->ShowWindow();
 		// 进行消息循环
 		CPaintManagerUI::MessageLoop();
 

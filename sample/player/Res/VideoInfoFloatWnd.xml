@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="260,325" sizebox="0,0,0,0" caption="0,0,0,0" roundcorner="0,0" mininfo="260,325" bktrans="false">
+    <!--字体预设-->
+    <Font id="0" name="微软雅黑" size="15" bold="false" default="true" underline="false" italic="false" shared="false" />
+    <Font id="1" name="微软雅黑" size="12" bold="true" underline="false" italic="false" />
+    <Font id="2" name="微软雅黑" size="12" bold="false" underline="false" italic="false" />
+    <!--控件预设-->
+    <Default name="Label" value="font=&quot;2&quot; text=&quot;-&quot; align=&quot;left&quot; valign=&quot;center&quot; AdaptiveSize=&quot;false&quot; textcolor=&quot;#FF424242&quot; disabledtextcolor=&quot;#FFA7A6AA&quot;" />
+    <Default name="RichEdit" value="font=&quot;2&quot; text=&quot;-&quot; align=&quot;left&quot; multiline=&quot;true&quot; textcolor=&quot;#FF424242&quot; valign=&quot;top&quot; rich=&quot;false&quot; " />
+    <!--包含文件-->
+    <Include source="111" />
+    <!--界面铺排-->
+    <TabLayout name="" bkimage="file='Default/VideoInfoFloatWnd/WndBK.png'" selectedid="0">
+        <VerticalLayout>
+          <Label name="TitleLbl" font="0" text="课件介绍" width="260" height="36" align="center" />
+          <Control height="20"/>
+          <HorizontalLayout height="20">
+            <Label name="CourseNameLbl" font="1" text="课程名：" width="90" align="left" textcolor="#FF424242" textpadding="20,0,0,0" />
+            <Label name="CourseNameCtxLbl"/>
+          </HorizontalLayout>
+          <Control height="10"/>
+          <HorizontalLayout height="20">
+            <Label name="TeacherLbl" font="1" text="老师：" width="90" align="left" textcolor="#FF424242" textpadding="20,0,0,0" />
+            <Label name="TeacherCtxLbl" />
+          </HorizontalLayout>
+          <Control height="10"/>
+          <HorizontalLayout height="20">
+            <Label name="GradeLbl" font="1" text="年级：" width="90" align="left" textcolor="#FF424242" textpadding="20,0,0,0" />
+            <Label name="GradeCtxLbl" />
+          </HorizontalLayout>
+          <Control height="10"/>
+          <HorizontalLayout height="20">
+            <Label name="SubjectLbl" font="1" text="学科：" width="90" align="left" textcolor="#FF424242" textpadding="20,0,0,0"/>
+            <Label name="SubjectCtxLbl" />
+          </HorizontalLayout>
+          <Control height="10"/>
+          <HorizontalLayout height="35" visible="false">
+            <Label name="" font="1" text="清晰度：" width="90" align="left" valign="top" textcolor="#FF424242" textpadding="20,0,0,0" />
+            <RichEdit name="" width="150" />
+          </HorizontalLayout>
+          <Control height="15"/>
+          <HorizontalLayout height="85">
+            <Label name="DescriptionLbl" font="1" text="视频简介：" width="90" align="left" valign="top" textcolor="#FF424242" disabledtextcolor="#FFA7A6AA" textpadding="20,0,0,0"/>
+            <RichEdit name="DescriptionCtxLbl" width="150" readonly="true"/>
+          </HorizontalLayout>
+        </VerticalLayout>
+    </TabLayout>
+</Window>
