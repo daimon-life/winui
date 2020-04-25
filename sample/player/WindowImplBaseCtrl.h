@@ -8,7 +8,7 @@
 #include <atlbase.h>
 #include <atlstr.h>
 // Duilib库
-#include "..\..\uisystem\siui\UIlib.h"
+#include "doui\UIlib.h"
 
 // 控件与事件名常量定义（只支持wchar_t）
 const wchar_t Name_wszWindowInit[]          = L"windowinit";

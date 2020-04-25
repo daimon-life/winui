@@ -13,27 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="control">
+      <UniqueIdentifier>{0a4caa8e-e5b7-4d47-b3dc-3ad4fa57f561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="window">
+      <UniqueIdentifier>{16e6a818-4698-43cb-826c-47a65a0750c6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MainWnd.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="WindowImplBaseCtrl.cpp">
-      <Filter>源文件</Filter>
+      <Filter>window</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWnd.cpp">
+      <Filter>window</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MainWnd.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="WindowImplBaseCtrl.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowImplBaseCtrl.h">
+      <Filter>window</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWnd.h">
+      <Filter>window</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -42,16 +48,13 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ui_xml1.bin">
-      <Filter>资源文件</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Xml Include="Res\MainWnd.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <Image Include="Res\Logo.ico">
       <Filter>资源文件</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Res\MainWnd.xml">
+      <Filter>资源文件</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

@@ -71,29 +71,29 @@
     <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)..\..\build\obj\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\bin\</OutDir>
+    <IntDir>$(OutDir)..\obj\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)..\..\build\obj\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\bin\</OutDir>
+    <IntDir>$(OutDir)..\obj\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebug|Win32'">
-    <OutDir>$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)..\..\build\obj\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\bin\</OutDir>
+    <IntDir>$(OutDir)..\obj\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeRelease|Win32'">
-    <OutDir>$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)..\..\build\obj\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\bin\</OutDir>
+    <IntDir>$(OutDir)..\obj\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
@@ -127,7 +127,7 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>.\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <BaseAddress>0x11000000</BaseAddress>
-      <ImportLibrary>$(ProjectDir)..\..\build\lib\$(Platform)_$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>$(OutDir)..\lib\$(TargetName).lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
@@ -168,7 +168,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
       <BaseAddress>0x11000000</BaseAddress>
-      <ImportLibrary>$(ProjectDir)..\..\build\lib\$(Platform)_$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>$(OutDir)..\lib\$(TargetName).lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
@@ -208,7 +208,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
       <BaseAddress>0x11000000</BaseAddress>
-      <ImportLibrary>$(ProjectDir)..\..\build\lib\$(Platform)_$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>$(OutDir)..\lib\$(TargetName).lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
@@ -244,7 +244,7 @@
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <BaseAddress>0x11000000</BaseAddress>
-      <ImportLibrary>$(ProjectDir)..\..\build\lib\$(Platform)_$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>$(OutDir)..\lib\$(TargetName).lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>

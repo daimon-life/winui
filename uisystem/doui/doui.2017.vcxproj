@@ -14,7 +14,8 @@
     <ProjectGuid>{2B9D6D65-1394-4F51-9A23-B73888EBF9CA}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>xDUI</RootNamespace>
-    <ProjectName>siui</ProjectName>
+    <ProjectName>doui</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -42,13 +43,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)..\..\build\obj\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\bin\</OutDir>
+    <IntDir>$(OutDir)..\obj\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)..\..\build\obj\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\bin\</OutDir>
+    <IntDir>$(OutDir)..\obj\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

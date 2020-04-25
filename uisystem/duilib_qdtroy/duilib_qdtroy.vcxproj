@@ -325,37 +325,37 @@
     <TargetName Condition="'$(Configuration)|$(Platform)'=='SDebugA|x64'">$(ProjectName)A_d</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugA|Win32'">$(ProjectName)A_d</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugA|x64'">$(ProjectName)A_d</TargetName>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\..\build\obj\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)..\obj\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)Temp\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='SDebug|Win32'">$(ProjectDir)..\..\build\obj\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='SDebug|Win32'">$(OutDir)..\obj\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='SDebug|x64'">$(SolutionDir)Temp\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='SDebugA|Win32'">$(ProjectDir)..\..\build\obj\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='SDebugA|Win32'">$(OutDir)..\obj\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='SDebugA|x64'">$(SolutionDir)Temp\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugA|Win32'">$(ProjectDir)..\..\build\obj\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugA|Win32'">$(OutDir)..\obj\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugA|x64'">$(SolutionDir)Temp\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\..\build\obj\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)..\obj\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)Temp\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='SRelease|Win32'">$(ProjectDir)..\..\build\obj\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='SRelease|Win32'">$(OutDir)..\obj\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='SRelease|x64'">$(SolutionDir)Temp\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='SReleaseA|Win32'">$(ProjectDir)..\..\build\obj\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='SReleaseA|Win32'">$(OutDir)..\obj\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='SReleaseA|x64'">$(SolutionDir)Temp\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseA|Win32'">$(ProjectDir)..\..\build\obj\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseA|Win32'">$(OutDir)..\obj\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseA|x64'">$(SolutionDir)Temp\$(Configuration)\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\bin\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)Bin\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='SRelease|Win32'">$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='SRelease|Win32'">$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\bin\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='SRelease|x64'">$(SolutionDir)Lib\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='SReleaseA|Win32'">$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='SReleaseA|Win32'">$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\bin\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='SReleaseA|x64'">$(SolutionDir)Lib\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseA|Win32'">$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseA|Win32'">$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\bin\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseA|x64'">$(SolutionDir)Bin\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\bin\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)Bin\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='SDebug|Win32'">$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='SDebug|Win32'">$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\bin\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='SDebug|x64'">$(SolutionDir)Lib\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='SDebugA|Win32'">$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='SDebugA|Win32'">$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\bin\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='SDebugA|x64'">$(SolutionDir)Lib\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugA|Win32'">$(ProjectDir)..\..\build\bin\$(Platform)_$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugA|Win32'">$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\bin\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugA|x64'">$(SolutionDir)Bin\</OutDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseA|Win32'">$(ProjectName)A</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseA|x64'">$(ProjectName)A</TargetName>

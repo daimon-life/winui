@@ -3,8 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "player", "player\player.vcxproj", "{60447EF4-B5E9-43C6-8E85-70BB01963AB6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2B9D6D65-1394-4F51-9A23-B73888EBF9CA} = {2B9D6D65-1394-4F51-9A23-B73888EBF9CA}
+	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "siui", "..\uisystem\siui\siui.2013.vcxproj", "{2B9D6D65-1394-4F51-9A23-B73888EBF9CA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "doui", "..\uisystem\doui\doui.2013.vcxproj", "{2B9D6D65-1394-4F51-9A23-B73888EBF9CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -29,13 +29,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -72,14 +72,14 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>$(IncludePath)</IncludePath>
-    <OutDir>$(ProjectDir)Build\Bin\Win32\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)Build\Immediate\Win32\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\bin\</OutDir>
+    <IntDir>$(OutDir)..\obj\$(ProjectName)\</IntDir>
     <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>$(IncludePath)</IncludePath>
-    <OutDir>$(ProjectDir)Build\Bin\Win32\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)Build\Immediate\Win32\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\bin\</OutDir>
+    <IntDir>$(OutDir)..\obj\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>

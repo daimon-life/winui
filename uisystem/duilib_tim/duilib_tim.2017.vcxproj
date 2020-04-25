@@ -72,24 +72,24 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>$(IncludePath)</IncludePath>
-    <OutDir>$(ProjectDir)Build\Bin\Win32\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)Build\Immediate\Win32\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\lib\</OutDir>
+    <IntDir>$(OutDir)..\obj\$(ProjectName)\</IntDir>
     <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>$(IncludePath)</IncludePath>
-    <OutDir>$(ProjectDir)Build\Bin\Win32\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)Build\Immediate\Win32\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\lib\</OutDir>
+    <IntDir>$(OutDir)..\obj\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
-    <OutDir>$(ProjectDir)Build\Bin\Win64\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)Build\Immediate\Win64\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\lib\</OutDir>
+    <IntDir>$(OutDir)..\obj\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
-    <OutDir>$(ProjectDir)Build\Bin\Win64\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)Build\Immediate\Win64\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\build\$(Platform)_$(Configuration)\lib\</OutDir>
+    <IntDir>$(OutDir)..\obj\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
