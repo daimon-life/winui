@@ -1,25 +1,25 @@
 @echo off
 
-rem åŸºæœ¬æµç¨‹
-rem 1.æ‹‰å–å­æ¨¡å—
-rem 2.æ›´æ–°å­æ¨¡å—
-rem 3.å­æ¨¡å—è·å–å¤±è´¥ï¼Œé€€å‡º
-rem 4.å°†vs2013å’Œvs2017å·¥ç¨‹æ–‡ä»¶æ‹·è´å‡ºå»
-rem 5.åˆ é™¤å¯¹åº”ç›®å½•
-rem 6.æ‹·è´duilibåˆ°å¯¹åº”ç›®å½•
-rem 7.åˆ é™¤æ‹·è´çš„.gitæ–‡ä»¶æˆ–æ–‡ä»¶å¤¹
-rem 8.å°†vs2013å’Œvs2017å·¥ç¨‹æ–‡ä»¶æ‹·è´è¿›æ¥
+rem »ù±¾Á÷³Ì
+rem 1. À­È¡×ÓÄ£¿é
+rem 2. ¸üĞÂ×ÓÄ£¿é
+rem 3. ×ÓÄ£¿é»ñÈ¡Ê§°Ü£¬ÍË³ö
+rem 4. ½«vs2013ºÍvs2017¹¤³ÌÎÄ¼ş¿½±´³öÈ¥
+rem 5. É¾³ı¶ÔÓ¦Ä¿Â¼
+rem 6. ¿½±´duilibµ½¶ÔÓ¦Ä¿Â¼
+rem 7. É¾³ı¿½±´µÄ.gitÎÄ¼ş»òÎÄ¼ş¼Ğ
+rem 8. ½«vs2013ºÍvs2017¹¤³ÌÎÄ¼ş¿½±´½øÀ´
 
 @if "%1" NEQ ""  goto switch
 @echo ########################################################################
 @echo "Expample Usage:"
-@echo update_duilib.bat all              #update all duilib.
-@echo update_duilib.bat duilib_src       #update duilib_src only.
-@echo update_duilib.bat duilib_c         #update duilib_c only.
-@echo update_duilib.bat duilib_faw       #update duilib_faw only.
-@echo update_duilib.bat duilib_qdtroy    #update duilib_qdtroy only.
-@echo update_duilib.bat duilib_nim       #update duilib_nim only.
-@echo update_duilib.bat duilib_tim       #update duilib_tim only.
+@echo update_duilib.bat all              # update all duilib.
+@echo update_duilib.bat duilib_src       # update duilib_src only.
+@echo update_duilib.bat duilib_c         # update duilib_c only.
+@echo update_duilib.bat duilib_faw       # update duilib_faw only.
+@echo update_duilib.bat duilib_qdtroy    # update duilib_qdtroy only.
+@echo update_duilib.bat duilib_nim       # update duilib_nim only.
+@echo update_duilib.bat duilib_tim       # update duilib_tim only.
 @echo ########################################################################
 goto end
 
